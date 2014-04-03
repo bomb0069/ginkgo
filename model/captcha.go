@@ -4,9 +4,6 @@ type Captcha struct {
 }
 
 func (captcha Captcha) GetLeftOperand() string {
-  if captcha.LeftOperand == 1 {
-  	return "One"
-  } else {
-    return "Two"
-  }
+  var NumberInString = [3]string{"One", "Two", "Three"}
+  return NumberInString[captcha.LeftOperand-1]
 }
