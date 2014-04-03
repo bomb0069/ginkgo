@@ -1,4 +1,4 @@
-package books_test
+package model 
 type Book struct {
   Title, Author string
   Pages int

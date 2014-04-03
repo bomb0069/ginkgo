@@ -1,4 +1,4 @@
-package books_test
+package tdd 
 
 import (
 	. "github.com/onsi/ginkgo"
