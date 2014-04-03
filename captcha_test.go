@@ -12,5 +12,9 @@ var _ = Describe("Captcha", func() {
       var captcha = Captcha{Pattern: 1, LeftOperand: 1, Operator: 1, RightOperand: 1}
       Expect(captcha.GetLeftOperand()).To(Equal("One"))
     })
+    It("should return Two when input for first operand is 2", func() {
+      var captcha = Captcha{Pattern: 1, LeftOperand: 2, Operator: 1, RightOperand: 1}
+      Expect(captcha.GetLeftOperand()).To(Equal("Two"))
+    })    
   })
 })
